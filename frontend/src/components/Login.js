@@ -70,7 +70,7 @@ export default function Login() {
           <Link to="/register" style={{ float: "right" }}>
             Forgot Password?
           </Link>
-          <button className="btn mt-3">Login</button>
+          <button className="btn color mt-3">Login</button>
         </form>
         <div className="text-center fs-6">
           Don't have an account? <Link to="/register">Register</Link>

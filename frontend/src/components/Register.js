@@ -124,7 +124,7 @@ export default function Register() {
               value={role}
             />
           </div>
-          <button className="btn mt-3">Register</button>
+          <button className="btn mt-3 color">Register</button>
         </form>
         <div className="text-center fs-6">
           Already Registered ?<Link to="/login"> Sign In</Link>

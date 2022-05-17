@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const Userroute = require("./routes/Userroute");
+const BloodDonation = require("./routes/BloodDonation");
+const OrganDonation = require("./routes/OrganDonation");
 const path = require("path");
 //const { createProxyMiddleware } = require("http-proxy-middleware");
 require("dotenv").config();
@@ -14,6 +16,9 @@ app.use(
 );
 app.use(bodyParser.json());
 app.use("/users", Userroute);
+app.use("/blooddonations", BloodDonation);
+app.use("/organdonations", OrganDonation);
+
 // app.use(
 //   "/api",
 //   createProxyMiddleware({

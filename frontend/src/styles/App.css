@@ -1,9 +1,9 @@
 a {
   color: black;
 }
-.nav-item :hover {
+.hoverlink:hover {
   color: white;
-  background-color: #555;
+  background-color: #03a9f4;
   border-radius: 20px;
 }
 .navbar-brand {
@@ -24,7 +24,7 @@ a {
 }
 /* .logout:hover {
   color: white;
-  background-color: #555;
+  background-color: #03a9f4;
   border-radius: 20px;
 } */
 .wrapper {
@@ -76,9 +76,38 @@ a {
   /* border: 1px solid red; */
 }
 .color {
-  color: #555;
+  color: #03a9f4;
 }
-
+.dropdown-toggle {
+  background-color: white;
+  box-shadow: none;
+  color: black;
+  border: none;
+}
+.dropdown-toggle:focus {
+  background-color: #03a9f4;
+  box-shadow: none;
+  color: white;
+  border-radius: 20px;
+  outline: 0;
+}
+.dropdown-toggle:hover {
+  background-color: #03a9f4;
+  box-shadow: none;
+  color: white;
+  border-radius: 20px;
+  outline: 0;
+}
+.dropdown-item:focus:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  outline: 0;
+}
+.dropdown-menu,
+.dropdown-menu:hover {
+  background-color: white;
+}
 .wrapper .form-field {
   padding-left: 10px;
   margin-bottom: 20px;
@@ -86,11 +115,7 @@ a {
   box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
 }
 
-.wrapper .form-field .fas {
-  color: #555;
-}
-
-.wrapper .btn {
+.wrapper .color {
   box-shadow: none;
   width: 100%;
   height: 40px;
@@ -101,7 +126,7 @@ a {
   letter-spacing: 1.3px;
 }
 
-.wrapper .btn:hover {
+.wrapper .color:hover {
   background-color: black;
   color: white;
 }
@@ -130,6 +155,8 @@ a {
 .card {
   margin-top: 5px;
   opacity: 0.85;
+  height: auto;
+  width: auto;
 }
 .card h4 {
   text-align: center;
@@ -145,4 +172,13 @@ a {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 3px;
+}
+.accord {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+.bluee {
+  background-color: #03a9f4;
+  color: white;
 }

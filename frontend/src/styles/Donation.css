@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&family=Open+Sans&family=Quicksand:wght@300&family=Roboto:wght@300;400&display=swap");
+
+/* body { */
+/* background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #6e86dd, #bdc3c7);
+  background: linear-gradient(to right, #3e80c3, #bdc3c7); */
+/* background-image: url('../../public/bg.jpg'); */
+/* background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px; */
+/* } */
+
+.formtitle {
+  font-weight: bold;
+}
+
+#header {
+  background-color: rgba(0, 0, 0, 0.238);
+  color: black;
+  font-weight: 900;
+  height: 70px;
+  width: 100%;
+  padding-top: 1px;
+  font-size: larger;
+}
+.form {
+  background-color: white;
+  border-radius: 5px;
+  width: 550px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.form-body {
+  text-align: left;
+  padding: 20px 10px;
+}
+
+.form-body > * {
+  padding: 5px;
+}
+
+.firstname {
+  display: flex;
+}
+
+.lastname {
+  display: flex;
+}
+
+.gender {
+  display: flex;
+}
+
+.Contact-No {
+  display: flex;
+}
+
+.age {
+  display: flex;
+}
+
+.address {
+  display: flex;
+}
+
+.city {
+  display: flex;
+}
+
+.state {
+  display: flex;
+}
+
+.pincode {
+  display: flex;
+}
+
+.Weight {
+  display: flex;
+}
+
+.organs {
+  display: flex;
+}
+
+.donated_before {
+  display: flex;
+}
+
+.lastdonationdate {
+  display: flex;
+}
+
+.label {
+  width: 40%;
+}
+
+.selector {
+  width: 60%;
+  display: flex;
+  /* padding-left: 0px; */
+  justify-content: start;
+}
+
+.form__label {
+  width: 40%;
+}
+
+.form_input {
+  width: 60%;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* .btn {
+  background-color: #608ab4;
+  font-weight: bolder;
+  color: black;
+} */
+
+.button-container {
+  display: flex;
+  width: 80vw;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: 8%;
+}
+
+.blood-donation {
+  background-color: hsl(197, 62%, 42%);
+  /* margin-right: 5%; */
+  width: 20%;
+  height: 20%;
+  font-size: 100%;
+  color: rgb(2, 4, 10);
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+}
+.blood-donation:hover {
+  width: 18%;
+  height: 18%;
+  font-size: 90%;
+  transition-duration: 0.3s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.organ-donation {
+  background-color: hsl(197, 62%, 42%);
+  width: 20%;
+  height: 20%;
+  font-size: 100%;
+  color: rgb(2, 4, 10);
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  border-radius: 8px;
+}
+.organ-donation:hover {
+  width: 18%;
+  height: 18%;
+  font-size: 90%;
+  transition-duration: 0.3s;
+  border-radius: 8px;
+  cursor: pointer;
+}

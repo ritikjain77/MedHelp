@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home">
       <div
         className="card container"
-        style={{ opacity: "93%", overflow: "auto" }}
+        style={{ opacity: "93%", overflow: "auto", height: "90vh" }}
       >
         <div className="card-body">
           <h4 className="text-dark mb-3">Introduction</h4>

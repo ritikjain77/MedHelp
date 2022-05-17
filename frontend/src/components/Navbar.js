@@ -44,42 +44,74 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/home">
+              <Link className="nav-link hoverlink" to="/home">
                 <i className="fa fa-fw fa-home"></i>Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/bookappoint">
+              <Link className="nav-link hoverlink" to="/bookappoint">
                 <i className="fa fa-fw fa-heartbeat"></i>Book Appointment
               </Link>
             </li>
             {/* <li className="nav-item">
-              <Link className="nav-link" to="/searchnearby">
+              <Link className="nav-link hoverlink" to="/searchnearby">
                 <i className="fa fa-fw fa-search"></i>Search Nearby
               </Link>
             </li> */}
             <li className="nav-item">
-              <Link className="nav-link" to="/donate">
+              {/* <Link className="nav-link hoverlink" to="/donate">
                 <i className="fa fa-fw fa-tint"></i>Blood/Organ Donation
-              </Link>
+              </Link> */}
+              <div className="dropdown">
+                <button
+                  className="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-toggle="dropdown"
+                  //aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i className="fa fa-fw fa-tint"></i>Donations
+                </button>
+                <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => (window.location.href = "/blooddonation")}
+                  >
+                    Blood Donation
+                  </button>
+                  <button
+                    className="dropdown-item"
+                    type="button"
+                    onClick={() => (window.location.href = "/organdonation")}
+                  >
+                    Organ Donation
+                  </button>
+                </div>
+              </div>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link" to="/charity">
+              <Link className="nav-link hoverlink" to="/charity">
                 <i className="fa fa-fw fa-cart-plus"></i>Charity Funding
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/faq">
+              <Link className="nav-link hoverlink" to="/faq">
                 <i className="fa fa-fw fa-question-circle"></i>FAQ's
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/discuss">
+              <Link className="nav-link hoverlink" to="/discuss">
                 <i className="fa fa-fw fa-comments"></i>Discuss
               </Link>
             </li>
             <li className="nav-item">
-              <button className=" nav-link logout" onClick={handlelogout}>
+              <button
+                className=" nav-link hoverlink logout"
+                onClick={handlelogout}
+              >
                 <i className="fa fa-fw fa-user"></i>Logout
               </button>
             </li>
