@@ -41,7 +41,7 @@ export default function Login() {
         </div>
         <div className="text-center mt-4 name">MEDHELP</div>
 
-        <form className="p-3 mt-3" onSubmit={onSubmitForm} autocomplete="off">
+        <form className="p-3 mt-3" onSubmit={onSubmitForm} autoComplete="off">
           <div className="form-field d-flex align-items-center">
             <span className="fa fa-envelope"></span>
             <input
@@ -67,9 +67,9 @@ export default function Login() {
               required
             />
           </div>
-          <a href="#" style={{ float: "right" }}>
+          <Link to="/register" style={{ float: "right" }}>
             Forgot Password?
-          </a>
+          </Link>
           <button className="btn mt-3">Login</button>
         </form>
         <div className="text-center fs-6">

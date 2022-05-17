@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import mhlogo from "../images/mhlogo.png";
 export default function Navbar() {
+  const handlelogout = () => {
+    if (window.confirm("Are you sure?") === true) {
+      localStorage.removeItem("my_token");
+      alert("Logged Out!");
+      window.location.href = "/login";
+    }
+  };
   return (
     <>
       <nav
@@ -46,32 +53,36 @@ export default function Navbar() {
                 <i className="fa fa-fw fa-heartbeat"></i>Book Appointment
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link" to="/searchnearby">
                 <i className="fa fa-fw fa-search"></i>Search Nearby
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link className="nav-link" to="/donate">
-                <i className="fa fa-fw fa-tint"></i> Blood/Organ Donation
+                <i className="fa fa-fw fa-tint"></i>Blood/Organ Donation
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/charity">
-                <i className="fa fa-fw fa-cart-plus"></i> Charity Funding
+                <i className="fa fa-fw fa-cart-plus"></i>Charity Funding
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/faq">
-                <i className="fa fa-fw fa-question-circle"></i> FAQ's
+                <i className="fa fa-fw fa-question-circle"></i>FAQ's
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/discuss">
-                <i className="fa fa-fw fa-comments"></i> Discuss
+                <i className="fa fa-fw fa-comments"></i>Discuss
               </Link>
             </li>
-            {/* <li className="nav-item">Profile</li> */}
+            <li className="nav-item">
+              <button className=" nav-link logout" onClick={handlelogout}>
+                <i className="fa fa-fw fa-user"></i>Logout
+              </button>
+            </li>
           </ul>
         </div>
       </nav>

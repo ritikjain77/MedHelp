@@ -3,7 +3,6 @@ const app = express();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const Userroute = require("./routes/Userroute");
-const AppointmentRoute = require("./routes/AppointmentRoutes");
 const path = require("path");
 //const { createProxyMiddleware } = require("http-proxy-middleware");
 require("dotenv").config();
@@ -27,6 +26,7 @@ app.use(express.static(path.join(__dirname, "frontend", "build")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
 });
+
 mongoose.connect(
   process.env.MONGO_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },

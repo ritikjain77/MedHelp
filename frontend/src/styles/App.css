@@ -1,0 +1,148 @@
+a {
+  color: black;
+}
+.nav-item :hover {
+  color: white;
+  background-color: #555;
+  border-radius: 20px;
+}
+.navbar-brand {
+  color: black;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.navbar-brand:hover {
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.logout {
+  border: none;
+  background-color: white;
+  color: black;
+}
+/* .logout:hover {
+  color: white;
+  background-color: #555;
+  border-radius: 20px;
+} */
+.wrapper {
+  width: 400px;
+  min-height: 500px;
+  margin: auto auto;
+  padding: 40px 30px 30px 30px;
+  background-color: white;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  width: 80px;
+  margin: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaa7,
+    -8px -8px 15px #fff;
+}
+
+.wrapper .name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 1.3px;
+  padding-left: 10px;
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.wrapper .form-field input {
+  width: 100%;
+  display: block;
+  border: none;
+  outline: none;
+  background: none;
+  /* font-size: 1.2rem; */
+  padding: 10px 15px 10px 10px;
+  color: #555;
+  /* border: 1px solid red; */
+}
+.color {
+  color: #555;
+}
+
+.wrapper .form-field {
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .form-field .fas {
+  color: #555;
+}
+
+.wrapper .btn {
+  box-shadow: none;
+  width: 100%;
+  height: 40px;
+  background-color: #03a9f4;
+  color: #fff;
+  border-radius: 25px;
+  /* box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff; */
+  letter-spacing: 1.3px;
+}
+
+.wrapper .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.wrapper a {
+  text-decoration: none;
+  font-weight: 2px;
+  color: #03a9f4;
+}
+
+.wrapper a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+  .wrapper {
+    margin: 30px 20px;
+    padding: 40px 15px 15px 15px;
+  }
+}
+.reg :hover {
+  background-color: white;
+  color: #039be5;
+}
+.card {
+  margin-top: 5px;
+  opacity: 0.85;
+}
+.card h4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardhw {
+  height: auto;
+  width: 600px;
+}
+.card-footer {
+  background: transparent;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 3px;
+}

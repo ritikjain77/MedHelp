@@ -68,7 +68,7 @@ export default function Register() {
           <img src={logo} alt="" />
         </div>
         <div className="text-center mt-4 name">MEDHELP</div>
-        <form className="p-3 mt-3" onSubmit={onSubmitForm}>
+        <form className="p-3 mt-3" onSubmit={onSubmitForm} autoComplete="off">
           <div className="form-field d-flex align-items-center">
             <span className="fa fa-user pr-1"></span>
             <input

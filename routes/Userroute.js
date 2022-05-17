@@ -90,7 +90,7 @@ router.post("/login", (req, res) => {
 });
 
 router.get("/getInfo", (req, res) => {
-  Users.find({}, function (err, user) {
+  Users.find({ Role: "Doctor" }, function (err, user) {
     if (err) {
       console.log(err);
     } else {
