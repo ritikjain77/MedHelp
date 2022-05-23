@@ -9,7 +9,7 @@ const OrganDonation = require("./routes/OrganDonation");
 const Appointment = require("./routes/Appointment");
 const path = require("path");
 app.use(cors());
-//const { createProxyMiddleware } = require("http-proxy-middleware");
+const { createProxyMiddleware } = require("http-proxy-middleware");
 require("dotenv").config();
 app.use(express.json());
 app.use(
@@ -23,13 +23,13 @@ app.use("/blooddonations", BloodDonation);
 app.use("/organdonations", OrganDonation);
 app.use("/appointmentinfos", Appointment);
 
-// app.use(
-//   "/api",
-//   createProxyMiddleware({
-//     target: "http://localhost:5000",
-//     changeOrigin: true,
-//   })
-// );
+app.use(
+  "/api",
+  createProxyMiddleware({
+    target: "http://localhost:5000",
+    changeOrigin: true,
+  })
+);
 
 app.use(express.static(path.join(__dirname, "frontend", "build")));
 app.get("*", (req, res) => {

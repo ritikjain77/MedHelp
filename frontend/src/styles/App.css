@@ -3,7 +3,7 @@ a {
 }
 .hoverlink:hover {
   color: white;
-  background-color: #03a9f4;
+  background-color: #555;
   border-radius: 20px;
 }
 .navbar-brand {
@@ -85,14 +85,14 @@ a {
   border: none;
 }
 .dropdown-toggle:focus {
-  background-color: #03a9f4;
+  background-color: #555;
   box-shadow: none;
   color: white;
   border-radius: 20px;
   outline: 0;
 }
 .dropdown-toggle:hover {
-  background-color: #03a9f4;
+  background-color: #555;
   box-shadow: none;
   color: white;
   border-radius: 20px;
@@ -182,7 +182,14 @@ a {
   background-color: #03a9f4;
   color: white;
 }
-
+.btnhover {
+  background-color: #555;
+  color: white;
+}
+.btnhover:hover {
+  background-color: black;
+  color: white;
+}
 .cardo {
   background-color: white;
   height: auto;

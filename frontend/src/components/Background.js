@@ -16,8 +16,6 @@ export default function Body() {
         src={bg}
         style={{
           position: "inherit",
-          // opacity: "0.9",
-          // filter: "blur(0px)",
           top: "0",
           left: "0",
           right: "0",
