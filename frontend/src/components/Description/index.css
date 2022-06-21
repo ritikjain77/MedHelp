@@ -1,0 +1,61 @@
+.Card{
+    padding: 0px;
+    margin: 0px;
+    /* bor/der: 2px solid red; */
+    /* padding-right: 2px;
+    padding-left: 2px;
+    padding-top: 0px; */
+    /* border: 1px solid red; */
+}
+
+
+.heading{
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 5px;
+    height: 40px;
+    font-size: x-large;
+    font-weight: bolder;
+    background-image: linear-gradient(rgba(99, 99, 185, 0.585),lightblue,white)
+}
+
+.title{
+    display: flex;
+    margin-top: 10px;;
+}
+.title-first{
+    display: flex;
+    width:43%;
+}
+.title-second{
+    display: flex;
+    width: 57%;
+}
+
+.title-second input{
+    background-color: rgba(180, 224, 238, 0.188);
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+.description textarea{
+    border: 1px solid rgba(0, 0, 0, 0.337);
+    border-radius: 5px;
+    background-color: rgba(180, 224, 238, 0.188);
+}
+
+.description textarea:focus{
+border: 2px solid black;
+}
+
+.button{
+    background-color: rgb(46, 100, 135);
+    color:white;
+    font-size: large;
+    height: 40px;
+    width: 90px;
+    border:0px;
+    border-radius: 5px;
+}

@@ -1,0 +1,63 @@
+.Card{
+    width:auto;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px;
+    margin-bottom: 5px
+}
+.btn{
+    border-radius: 5px;
+    border:2px solid black;
+}
+
+.title1{
+    background-image: linear-gradient(rgba(99, 99, 185, 0.585),lightblue,white);
+    height: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title1-first{
+    width:13%;
+}
+.title1-second{
+    color: rgba(0, 0, 0, 0.599);
+    font-size: x-large;
+    font-style: italic;
+}
+.des{
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.des-first{
+    width:26%;
+    display: inline;
+}
+.des-second{
+    color: rgba(0, 0, 0, 0.599);
+    font-size: larger;
+    font-style: italic;
+}
+.btnn{
+    background-color: rgba(46, 99, 135, 0.807);
+    color:white;
+    font-size: medium;
+    height: 35px;
+    width: 80px;
+    border:0px;
+    border-radius: 5px;
+}
+
+#npt-textarea{
+    background-color: rgba(180, 224, 238, 0.188);
+}
+.discuss{
+    font-style: italic;
+    color:rgba(0, 0, 0, 0.619);
+    font-size: large;
+    padding-left: 5px;
+}
