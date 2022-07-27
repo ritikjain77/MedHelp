@@ -48,7 +48,7 @@ To run this project use
 ![Screenshot 2022-07-27 at 10 58 32 PM](https://user-images.githubusercontent.com/64361223/181316437-074f1acc-c86d-4dcb-ac97-8afca1a70aa7.png)
 
 
-##Contributing
+## Contributing
 
 Contributions are always welcome!
 
