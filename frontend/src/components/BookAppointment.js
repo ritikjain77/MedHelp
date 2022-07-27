@@ -1,6 +1,30 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 export default function BookAppointment() {
+  let doctorData = [{
+    'name':'Dr. Amit Agrawal',
+    'Specialization':'Gastro Surgeon',
+    'Degree':'MBBS MD',
+    'Mob no.':9988776655,
+  },
+  {
+    'name':'Dr. Bharat Shantanu',
+    'Specialization':'Psychiatrist',
+    'Degree':'MBBS MD',
+    'Mob no.':9456789055,
+  },
+  {
+    'name':'Dr. Bandana Gupta',
+    'Specialization':'Surgeon',
+    'Degree':'MBBS MD',
+    'Mob no.':9588776655,
+  },
+  {
+    'name':'Dr. Ashok kumar dubry',
+    'Specialization':'Physician',
+    'Degree':'MBBS MD',
+    'Mob no.':8988776655,
+  }]
   const [userlist, setUserlist] = useState([]);
   useEffect(() => {
     getusers();
@@ -23,7 +47,7 @@ export default function BookAppointment() {
     <>
       <div className="card container">
         <div className="card-body table-responsive">
-          {userlist.length === 0 ? (
+          {doctorData.length === 0 ? (
             <p>Sorry, Doctors are currently unavailable !</p>
           ) : (
             <div className="table-wrapper">
@@ -44,12 +68,12 @@ export default function BookAppointment() {
                     </tr>
                   </thead>
                   <tbody className="getbooks">
-                    {userlist.map((singleuser, index) => (
+                    {doctorData.map((doc, index) => (
                       <tr>
                         <td>{index + 1}</td>
-                        <td>{singleuser.Username}</td>
-                        <td>{singleuser.Email}</td>
-                        <td>{singleuser.Role}</td>
+                        <td>{doc.name}</td>
+                        <td>{doc.Specialization}</td>
+                        <td>{doc.Degree}</td>
                         <td>
                           <button
                             type="button"
